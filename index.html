@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/queries.css">
+    <!--<link rel="stylesheet" href="css/queries.css">-->
     <link rel="stylesheet" href="css/utilities.css">
   </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -43,15 +43,15 @@
        <div class="container-fluid">
            <div class="row">
                <div class="col-xs-5">
-                   <img src="img/chachita.PNG" alt="foto de perro de color blanco" class="img-responsive">
+                   <img id="fotoPet" src="img/chachita.PNG" alt="foto de perro de color blanco" class="img-responsive">
                </div>
                <!--informacion-->
                <div class="col-xs-7">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2 class="wine">Chachita</h2>
+                            <h2 id="labelName" class="wine">Chachita</h2>
                            <p class="gray">Azcapotzalco, Distrito Federal</p>
-                           <p class="gray">Preciosa perrita con el caracter más noble, bueno y dulce que hay. Es una buena nena muy tranquila, cariñosa, sociable con los humanos y con otros perritos, es juguetona y mus inteligente. Fue rescatada de un terreno... <a href="#" class="turquoise">...leer más</a></p>
+                           <p id="parrafoDescripcion" class="gray">Preciosa perrita con el caracter más noble, bueno y dulce que hay. Es una buena nena muy tranquila, cariñosa, sociable con los humanos y con otros perritos, es juguetona y mus inteligente. Fue rescatada de un terreno... <a href="#" class="turquoise">...leer más</a></p>
                         </div>
                     </div>
                     <!--botones favorito y compartir-->
@@ -111,7 +111,8 @@
                </div>
                <div class="col-xs-3">
                   <div class="bg-white">
-                      <img src="img/tamano.PNG" alt="dibujo lateral de un perro sentado" class="img-responsive pd-5">
+                      <p id="labelAge"></p>
+                      
                    <p class="gray"><b>tamaño</b></p>
                   </div>
                </div>
@@ -152,10 +153,15 @@
            </div>
        </div>
    </section>
+     <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="js/bootstrap.min.js"></script>
     <!--JS/JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!--script-->
     <script type="text/javascript" src="js/script.js"></script> 
-    <!-- BOOTSTRAP JAVASCRIPT -->
-    <script src="js/bootstrap.min.js"></script>
+
+  
 </body>
 </html>
